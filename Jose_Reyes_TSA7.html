@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Simulator</title>
+    <link rel="stylesheet" href="Jose_Reyes_TSA7.css">
+</head>
+<body>
+    <div class="grid-wrapper">
+        <div class="control-panel">
+            <button class="btns" onclick="resetFlexbox()" style="grid-column: 1/3;">Reset Flexbox</button>
+            <input type="number" name="" id="spacing" class="values" min="0" value="0">
+            <button class="btns" onclick="setGap()">Gap</button>
+          
+            <div style="grid-column: 1/3;">Flex Direction</div>
+            <button class="btns" onclick="setDirection(1)">Row</button>
+            <button class="btns" onclick="setDirection(2)">Column</button>
+
+            <div style="grid-column: 1/3;">Justify Content</div>
+            <button class="btns" onclick="setJustifyContent(1)">Start</button>
+            <button class="btns" onclick="setJustifyContent(2)">Center</button>
+            <button class="btns" onclick="setJustifyContent(3)">End</button>
+            <button class="btns" onclick="setJustifyContent(4)">Space Between</button>
+            <button class="btns" onclick="setJustifyContent(5)">Space Around</button>
+            <button class="btns" onclick="setJustifyContent(6)">Space Evenly</button>
+
+            <div style="grid-column: 1/3;">Align Items</div>
+            <button class="btns" onclick="setAlignItems(1)">Start</button>
+            <button class="btns" onclick="setAlignItems(2)">Center</button>
+            <button class="btns" onclick="setAlignItems(3)">End</button>
+            <div></div>
+
+            <div style="grid-column: 1/3;">Flex Grow</div>
+            <button class="btns" onclick="setGrow(0)">Reset</button>
+            <button class="btns" onclick="setGrow(4)">Grow All</button>
+            <button class="btns" onclick="setGrow(1)">Grow B-1</button>
+            <input type="number" name="" id="grow1" class="values" min="0" value="0">
+            <button class="btns" onclick="setGrow(2)">Grow B-2</button>
+            <input type="number" name="" id="grow2" class="values" min="0" value="0">
+            <button class="btns" onclick="setGrow(3)">Grow B-3</button>
+            <input type="number" name="" id="grow3" class="values" min="0" value="0">
+        </div>
+
+        <div class="flex-wrapper" id="flex-wrapper">
+            <div class="item-box" id="item1">1</div>
+            <div class="item-box" id="item2">2</div>
+            <div class="item-box" id="item3">3</div>
+        </div>
+    </div>
+
+    <script src="Jose_Reyes_TSA7.js"></script>
+</body>
+</html> 
