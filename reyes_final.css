@@ -612,8 +612,6 @@ body {
     }
 }
 
-/* Additional media queries for responsiveness */
-
 @media screen and (max-width: 768px) {
     .main-picture {
         height: 70vh;
