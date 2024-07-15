@@ -619,16 +619,22 @@ body {
     }
 
     .open-btn {
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: gray;
         display: block; 
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        z-index: 2;
     }
 
     .sidebar a {
         display: block; 
     }
-}
 
-
-@media screen and (max-width: 768px) {
     .navigation {
         display: none; 
     }
@@ -692,18 +698,6 @@ body {
 
 @media screen and (min-width: 769px) {
     .open-btn {
-        display: none; 
-    }
-
-    .open-btn-nav {
-        display: none; 
-    }
-
-    .nav-list {
-        display: none; 
-    }
-
-    .sidebar a {
         display: none; 
     }
 }
