@@ -3,130 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pokemon midterms</title>
-    <link rel="stylesheet" href="reyes_mpe.css">
-
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="reyes_final.css">
 </head>
 <body>
 
+<!-- Navigation -->
+<nav class="Navigation">
     <div class="container">
-
-        <div class="box1 box">  
-            <img src="jigglypuff.png" alt="jigglypuff">
-            <p>Jigglypuff</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 normal">Normal</p>
-                <p class="type2 fairy">Fairy</p>
-            </div>
-        </div>
-
-        <div class="box2 box">  
-            <img src="meowth.png" alt="meowth">
-            <p>Meowth</p>
-            <img src="pokeball.png" id="pokeball"  alt="pokeball">
-            <div class="types">
-                <p class="type1 normal">Normal</p>
-            </div>
-        </div>
-
-        <div class="box3 box">  
-            <img src="mew.png" alt="mew">
-            <p>Mew</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 psychic">Psychic</p>
-            </div>
-        </div>
-
-        <div class="box4 box">  
-            <img src="charmander.png" alt="charmander">
-            <p>Charmander</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 fire">Fire</p>
-            </div>
-        </div>
-
-        <div class="box5 box">  
-            <img src="bullbasaur.png" alt="bullbasaur">
-            <p>Bulbasaur</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 grass">Grass</p>
-                <p class="type2 poison">Poison</p>
-            </div>
-        </div>
-
-        <div class="box6 box">  
-            <img src="bellsprout.png" alt="bellsprout">
-            <p>Bellsprout</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 grass">Grass</p>
-                <p class="type2 poison">Poison</p>
-            </div>
-        </div>
-
-        <div class="box7 box">  
-            <img src="mankey.png" alt="mankey">
-            <p>Mankey</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 fighting">Fighting</p>
-            </div>
-        </div>
-
-        <div class="box8 box">  
-            <img src="pikachu.png" alt="pikachu">
-            <p>Pikachu</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 electric">Electric</p>
-            </div>
-        </div>
-
-        <div class="box9 box">  
-            <img src="snorlax.png" alt="snorlax">
-            <p >Snorlax</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 normal">Normal</p>
-            </div>
-        </div>
-
-        <div class="box10 box">  
-            <img src="squirtle.png" alt="squirtle">
-            <p >Squirtle</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 water">Water</p>
-            </div>
-        </div>
-
-        <div class="box11 box">  
-            <img src="rattata.png" alt="rattata">
-            <p>Rattata</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 normal">Normal</p>
-            </div>
-        </div>
-
-        <div class="box12 box">  
-            <img src="venonat.png" alt="venonat">
-            <p>Venonat</p>
-            <img src="pokeball.png" id="pokeball" alt="pokeball">
-            <div class="types">
-                <p class="type1 bug">Bug</p>
-                <p class="type2 poison">Poison</p>
-            </div>
-        
-        
-        </div>
-        
-
+        <div class="Logo">Kyle Reyes</div>
+        <ul class="lists">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="open-btn" onclick="openNav()">&#9776;</button> 
     </div>
+</nav>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home"><i class="fas fa-home"></i> Home</a>
+    <a href="#about"><i class="fas fa-user"></i> About</a>
+    <a href="#blog"><i class="fas fa-blog"></i> Blog</a>
+    <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+</div>
+
+<section id="home" class="main-picture">
+    <div class="overlay">
+        <div class="container">
+            <div class="center">
+                <a href="#about" class="btn"> 
+                    <svg width="150px" height="60px" viewBox="0 0 180 60" class="border">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>View More</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
     
+<!-- About Section -->
+<section id="about" class="description">
+    <div class="container">
+        <div class="me">
+            <div class="polaroid">
+                <img src="mek.jpg" alt="Kyle's Picture">
+            </div>
+            <div class="text-content">
+                <h3>Hi!</h3>
+                <h4>I'm Kyle Reyes</h4>
+                <p>A 20-year-old first-year college student at FEU Institute of Technology, 
+                    diving into a Bachelor's in Information Technology with a focus on Cybersecurity. 
+                    My journey in tech stems from a deep curiosity about cybersecurity and a strong drive to protect digital spaces. 
+                    Alongside my studies, I have this passion for fashion—it's not just about trends but about expressing who I am through what I wear. 
+                    I believe in blending creativity with tech skills to bring a fresh approach to the industry. Beyond classes, 
+                    I love exploring new fashion ideas and connecting with others who share my interests.
+                    My goal? To excel in cybersecurity while staying true to my love for fashion, embracing every twist and turn in this college adventure!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Blog Section -->
+   <section id="blog" class="blog">
+    <h3>Latest On Fashion</h3>
+    <div class="container">
+        <div class="blog-item">
+            <img src="mee1.jpg" alt="Blog Image 1">
+            <div class="content">
+                <h4>Clean Girls Fits</h4>
+                <p>Comfy minimalist and effortless fits in neutral tones...</p>  
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="onit.jpg" alt="Blog Image 2">
+            <div class="content">
+                <h4>Onitsuka Shoes</h4>
+                <p>Onitsuka Mexico 66: A very classic and stylish shoe for everyday use, better than sambas...</p> 
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="meee4.jpg" alt="Blog Image 3">
+            <div class="content">
+                <h4>Romantic Chic Fits</h4>
+                <p>Soft girl look, garments with ruffles, frills and details are a big staples...</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="acces.jpg" alt="Blog Image 4">
+            <div class="content">
+                <h4>Accesories</h4>
+                <p>Add more statement to your outfits...</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="me5.jpg" alt="Blog Image 5">
+            <div class="content">
+                <h4>Cascual Chic Fits</h4>
+                <p>Comfy outfits, but elegant...</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="mee6.jpg"Blog Image 6>
+            <div class="content">
+                <h4>Stylish Clothes</h4>
+                <p>A big staple and investment to your closet</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="me7.jpg" alt="Blog Image 7">
+            <div class="content">
+                <h4>Sporty Chic Fits</h4>
+                <p>It's all about cool and comfortable look...</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="hils.jpg" alt="Blog Image 8">
+            <div class="content">
+                <h4>High Heels</h4>
+                <p>A must have shoes in womans closet...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h3>My Works</h3>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="tortp.jpg" alt="project 1">
+                <h4>Technical 3</h4>
+                <p>Album Announcement.</p> 
+                <a href="https://ktetsuu.github.io/it0043tc01/reyes_tsa3.html" class="view-project">See Project</a>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="Winxx.webp" alt="Project 2">
+                <h4>Technical 5</h4>
+                <p>Wingx Club Webpage</p>
+                <a href="https://ktetsuu.github.io/it0043tc01/reyes_ruamero_tsa5.html" class="view-project">See Project</a>
+            </div>
+                
+
+            <div class="portfolio-item">
+                <img src="ttp.jpg" alt="Project 3">
+                <h4>Technical 6</h4>
+                <p>Taylor Swift Homepage Website</p>
+                <a href="https://ktetsuu.github.io/it0043tc01/Jose_Reyes_TSA6.html#albums" class="view-project">See Project</a>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="flex.png" alt="Project4 ">
+                <h4>Technical 7</h4>
+                <p>Flex-box Simulator</p>
+                <a href="https://ktetsuu.github.io/it0043tc01/reyes_ruamero_tsa5.html" class="view-project">See Project</a>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="pokeb.jpg" alt="Project 5">
+                <h4>Midterm Practical</h4>
+                <p>Pokemon Webpage</p>
+                <a href="https://ktetsuu.github.io/it0043tc01/reyes_mpe.html" class="view-project">See Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h3>Contact Me</h3>
+        <div class="container">
+            <div class="contact-info">
+                <p>If you have any questions, feel free to reach out to me.</p>
+                <p>Email: <a href="mailto:kylejenniferr@gmail.com">kylejenniferr@gmail.com</a></p>
+                <p>Phone: <a href="tel:+2897703">2897703</a></p>
+            </div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/kylejennifer.reyes.172?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/kayleeereyess/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://github.com/ktetsuu/it0043tc01" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p>&copy; 2024 Kyle Reyes. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="reyes_final.js"></script>
 </body>
 </html>
